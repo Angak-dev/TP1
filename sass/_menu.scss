@@ -199,3 +199,11 @@ header {
        display: flex;
    }
 }
+
+
+@media screen and (max-width: 500px) {
+    #barre_navigation #barre_navigation_liste li  {
+        font-size: 0.4em;
+        display: flex;
+    }
+}

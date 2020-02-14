@@ -1,3 +1,30 @@
+@media screen and (max-width: 500px) {
+  /*==============FOOTER==================================================*/
+  .site-footer {
+    background-color: black;
+    position: relative;
+    color: white;
+    font-family: 'Titillium Web';
+    padding: 1em 0.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #site-footer-logo p {
+    margin-bottom: 0.4em;
+    font-size: 1em;
+  }
+  #site-footer-social img {
+    width: 40px;
+    padding: 0.2em 0;
+  }
+}
+
 body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -31,6 +58,45 @@ body {
   }
   #logo img {
     max-width: 2em !important;
+  }
+  .partie2 {
+    display: block;
+    background-color: black;
+    height: 450px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .partie2 .barre-blanche {
+    background-color: white;
+    height: 6px;
+    width: 50%;
+    margin-top: 40px;
+  }
+  .partie2 h2 {
+    margin-top: 20px;
+    color: white;
+  }
+  .partie2 p {
+    width: 85%;
+    margin-top: 20px;
+    color: white;
+    line-height: 25px;
+  }
+  .partie2 .barre-blanche:last-child {
+    height: 4px;
+    width: 30%;
   }
 }
 
@@ -281,6 +347,82 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #barre_navigation #barre_navigation_liste li {
+    font-size: 0.4em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .partie1 {
+    background-color: black;
+    height: 550px;
+  }
+  .partie1 {
+    position: relative;
+  }
+  .partie1 img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .partie1 .mySlides {
+    display: none;
+    height: 550px;
+  }
+  .partie1 .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    -webkit-transition: background-color 0.6s ease;
+    transition: background-color 0.6s ease;
+  }
+  .partie1 .dot:nth-child(1) {
+    left: 40%;
+  }
+  .partie1 .dot:nth-child(2) {
+    left: 50%;
+  }
+  .partie1 .dot:nth-child(3) {
+    left: 60%;
+  }
+  .partie1 .active {
+    background-color: #717171;
+  }
+  /* Fading animation */
+  .partie1 .fade {
+    -webkit-animation-name: fade;
+            animation-name: fade;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 /*# sourceMappingURL=style.css.map */

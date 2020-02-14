@@ -28,5 +28,35 @@ body {
     }
     #logo img {
 		max-width: 2em !important;
+    }
+    .partie2 {
+		display: block;
+		background-color: black;
+		height: 450px;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		text-align: center;
+	}
+	.partie2 .barre-blanche {
+		background-color: white;
+		height: 6px;
+		width: 50%;
+		margin-top: 40px;
+	}
+	.partie2 h2 {
+		margin-top: 20px;
+		color: white;
+	}
+	.partie2 p {
+		width: 85%;
+		margin-top: 20px;
+		color: white;
+		line-height: 25px;
+	}
+	.partie2 .barre-blanche:last-child {
+		height: 4px;
+		width: 30%;
 	}
 }
