@@ -1,0 +1,286 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.partie1 {
+  width: 100%;
+  height: 800px;
+  background: black;
+}
+
+.partie1 img {
+  width: 100%;
+  height: 800px;
+}
+
+@media screen and (max-width: 959px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Titillium Web';
+    padding: 0;
+    margin: 0;
+  }
+  /*==============NAV==================================================*/
+  #logo {
+    position: fixed;
+    top: 8px;
+    left: 1em;
+    z-index: 6;
+  }
+  #logo img {
+    max-width: 2em !important;
+  }
+}
+
+header {
+  position: absolute;
+}
+
+#barre_navigation {
+  /* background:rgba(0,0,0,0.75);*/
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#burger {
+  display: none;
+}
+
+.site-header-social {
+  width: 9em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#logo_mdjz img {
+  width: 75px;
+}
+
+#barre_navigation #barre_navigation_liste {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#barre_navigation #barre_navigation_liste li {
+  list-style: none;
+  padding: 0 3em;
+}
+
+#barre_navigation #barre_navigation_liste li a {
+  text-decoration: none;
+  font-family: Titillium Web;
+  font-weight: 500;
+  color: #fff;
+  font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#barre_navigation #barre_navigation_liste li a:hover {
+  color: #EB7B00;
+}
+
+#barre_navigation #barre_navigation_liste li .far,
+#barre_navigation #barre_navigation_liste li .fas {
+  padding-right: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+#barre_navigation #logo_don,
+#barre_navigation #logo_fb,
+#barre_navigation #logo_insta {
+  margin: 0 1em;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+#barre_navigation #logo_don i {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+#barre_navigation #logo_fb img,
+#barre_navigation #logo_insta img {
+  width: 25px;
+  height: 25px;
+}
+
+#barre_navigation #logo_mdjz {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+@media screen and (max-width: 959px) {
+  body #burger + label {
+    position: fixed;
+    top: 6px;
+    right: 48%;
+    height: 25px;
+    width: 25px;
+    z-index: 5;
+  }
+  body #burger + label span {
+    position: absolute;
+    width: 100%;
+    height: 0.1em;
+    top: 50%;
+    display: block;
+    background: #c3a044;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  body #burger + label span:first-child {
+    top: 12px;
+  }
+  body #burger + label span:nth-child(2) {
+    top: 19px;
+  }
+  body #burger + label span:last-child {
+    top: 26px;
+  }
+  body label:hover {
+    cursor: pointer;
+  }
+  body #burger:checked + label span {
+    opacity: 0;
+    top: 50%;
+    background-color: orange;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  body #burger:checked + label span:first-child {
+    opacity: 1;
+    -webkit-transform: translateY(10px) rotate(405deg);
+            transform: translateY(10px) rotate(405deg);
+  }
+  body #burger:checked + label span:last-child {
+    opacity: 1;
+    -webkit-transform: translateY(10px) rotate(-405deg);
+            transform: translateY(10px) rotate(-405deg);
+  }
+  body #burger ~ nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3.1em;
+    z-index: 3;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+    background: black;
+    /*background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 0, 0, 0));*/
+    overflow: hidden;
+  }
+  body #burger ~ nav > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    position: absolute;
+    list-style-type: none;
+    font-size: 1em;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+  }
+  body #burger ~ nav > ul > li {
+    opacity: 0;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  body #burger ~ nav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #020304;
+    font-weight: 700;
+    font-family: sans-serif;
+    display: block;
+    padding: 30px;
+  }
+  body #burger:checked ~ nav {
+    height: 100%;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+  }
+  body #burger:checked ~ nav > ul > li {
+    opacity: 1;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+  #burger:checked ~ nav ul li:nth-child(1) {
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.1s;
+  }
+  #burger:checked ~ nav ul li:nth-child(2) {
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.2s;
+  }
+  #burger:checked ~ nav ul li:nth-child(3) {
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.3s;
+  }
+  #burger:checked ~ nav ul li:nth-child(4) {
+    -webkit-transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+    transition: all 0.3s cubic-bezier(0.6, 0, 0.8, 1.5) 0.4s;
+  }
+  nav > div {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+  }
+  nav > div > i {
+    margin: 10px;
+    -webkit-filter: invert(1);
+            filter: invert(1);
+    margin-top: 0;
+  }
+  #barre_navigation img {
+    width: 150px;
+  }
+  #barre_navigation #barre_navigation_liste li a {
+    font-size: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
