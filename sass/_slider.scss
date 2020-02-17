@@ -108,10 +108,10 @@ scroll-snap-type: mandatory;
     height: 10px;
 }
 
-// .partie4 .slides::-webkit-scrollbar-thumb {
-//     background: rgb(129, 57, 57);
-//     border-radius: 10px;
-// }
+.partie4 .slides::-webkit-scrollbar-thumb {
+    background: rgb(129, 57, 57);
+    border-radius: 10px;
+}
 
 // .partie4 .slides::-webkit-scrollbar-track {
 //     background: transparent;

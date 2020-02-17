@@ -614,4 +614,9 @@ scroll-snap-type: mandatory;
   width: 10px;
   height: 10px;
 }
+
+.partie4 .slides::-webkit-scrollbar-thumb {
+  background: #813939;
+  border-radius: 10px;
+}
 /*# sourceMappingURL=style.css.map */
