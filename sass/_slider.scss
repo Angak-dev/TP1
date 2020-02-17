@@ -103,10 +103,10 @@ scroll-snap-type: mandatory;
     }
 }
 
-// .partie4 .slides::-webkit-scrollbar {
-//     width: 10px;
-//     height: 10px;
-// }
+.partie4 .slides::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
 // .partie4 .slides::-webkit-scrollbar-thumb {
 //     background: rgb(129, 57, 57);
