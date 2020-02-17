@@ -1,44 +1,90 @@
-@media screen and (max-width: 500px) {
-  /*==============FOOTER==================================================*/
-  .site-footer {
+/*==============FOOTER==================================================*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Titillium Web';
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (min-width: 960px) {
+  header {
+    display: inline-block;
+    position: fixed !important;
     background-color: black;
-    position: relative;
-    color: white;
-    font-family: 'Titillium Web';
-    padding: 1em 0.8em;
+    width: 100%;
+    height: 70px;
+  }
+  .partie1 {
+    width: 100%;
+    height: 800px;
+    background: black;
+  }
+  .partie1 img {
+    width: 100%;
+    height: 800px;
+  }
+  #logo {
+    /*position: absolute;*/
+    top: 12px;
+    left: 1em;
+    z-index: 6;
+  }
+  #logo img {
+    width: 50px;
+    height: 50px;
+  }
+  #barre_navigation {
+    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .partie2 {
+    background-color: black;
+    color: white;
+    height: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  #site-footer-logo p {
-    margin-bottom: 0.4em;
-    font-size: 1.2em;
+  .partie2 h2 {
+    font-size: 3em;
   }
-  #site-footer-social img {
-    width: 40px;
-    padding: 0.2em 0;
+  .partie2 .barre-blanche {
+    background-color: white;
+    width: 20%;
+    height: 7px;
+    border-radius: 20px;
   }
-}
-
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.partie1 {
-  width: 100%;
-  height: 800px;
-  background: black;
-}
-
-.partie1 img {
-  width: 100%;
-  height: 800px;
+  .partie2 .barre-blanche:nth-child(1) {
+    margin-top: 20px;
+  }
+  .partie2 .barre-blanche:last-child {
+    height: 5px;
+    width: 10%;
+  }
+  .partie2 p {
+    text-align: center;
+    width: 50%;
+    font-size: 1.7em;
+    border: 1px seolid white;
+  }
 }
 
 @media screen and (max-width: 959px) {
