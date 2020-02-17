@@ -679,4 +679,46 @@ scroll-snap-type: mandatory;
   width: 100%;
   height: 100%;
 }
+
+.partie4 .slider > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  text-decoration: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.partie4 .slider > a:active {
+  top: 1px;
+}
+
+.partie4 .slider > a:focus {
+  background: #000;
+}
+
+.partie4 .mon-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: gray;
+  font-family: 'Ropa Sans', sans-serif;
+  overflow: hidden;
+}
 /*# sourceMappingURL=style.css.map */
