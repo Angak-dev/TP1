@@ -111,6 +111,10 @@
     font-size: 1.7em;
     border: 1px seolid white;
   }
+  .partie3 {
+    height: 500px;
+    background-color: grey;
+  }
 }
 
 @media screen and (max-width: 959px) {
