@@ -127,6 +127,10 @@
     text-transform: uppercase;
     margin: 2em 0;
   }
+  .partie3 div {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 959px) {
