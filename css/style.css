@@ -576,4 +576,37 @@ header {
   text-align: center;
   overflow: hidden;
 }
+
+.partie4 .slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  /*
+scroll-snap-points-x: repeat(300px);
+scroll-snap-type: mandatory;
+*/
+}
+
+.partie4 .slides .partie4 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.partie4 .slides .partie4 div h2 {
+  font-size: 1.5rem;
+}
+
+.partie4 .slides .partie4 div p {
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
