@@ -1000,7 +1000,8 @@ header {
     font-size: 1em;
   }
   #horaire {
-    display: none;
+    /*display: none;*/
+    background-color: lightblue;
   }
 }
 /*# sourceMappingURL=style.css.map */
