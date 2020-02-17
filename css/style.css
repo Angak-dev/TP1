@@ -61,7 +61,7 @@ body {
   }
   .partie2 {
     display: block;
-    background-color: lightgrey;
+    background-color: black;
     height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
